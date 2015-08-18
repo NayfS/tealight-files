@@ -6,7 +6,8 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-
+i=0
+j=1
 while True:
   if right_side()=='fruit':
     turn(1)
@@ -16,7 +17,12 @@ while True:
     move()
   elif look()=='fruit':
     move()
+  if i>0:
+    i=0
+    for j in (0,5):
+      move
   else:
     turn(1)
     move()
+    i=i+1
     
