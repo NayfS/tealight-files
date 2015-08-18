@@ -17,7 +17,7 @@ while True:
     move()
   elif look()=='fruit':
     move()
-  if i>0:
+  if i>3:
     i=0
     for j in (0,5):
       move
