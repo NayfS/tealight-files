@@ -6,4 +6,22 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-# Add your code here
+while True:
+  i=0
+  if look()=='fruit':
+    move()
+  elif right_side()=='fruit':
+    turn(1)
+    while look()=='fruit':
+      move()
+  elif left_side()=='fruit':
+    turn(2)
+    while look()=='fruit':
+      move()
+  else:
+    while i==0:
+      turn(1)
+      move()
+      if look()=='fruit':
+        i=1
+    
