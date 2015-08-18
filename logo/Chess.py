@@ -17,4 +17,4 @@ def board(edges, size):
     turn(angle)
 
 turn(-90)
-waterwheel(12,75)
+board(12,75)
