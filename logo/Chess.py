@@ -6,7 +6,7 @@ def square(edges, size):
         move(size)
         turn(angle)
       move(size)
-  turn(180)
+  turn(90)
   for i in range(0,2):
       for i in range(0, edges):
         move(size)
