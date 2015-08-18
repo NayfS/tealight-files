@@ -12,11 +12,14 @@ while True:
   if right_side()=='fruit':
     turn(1)
     move()
+    i=0
   elif left_side()=='fruit':
     turn(2)
     move()
+    i=0
   elif look()=='fruit':
     move()
+    i=0
   if i>3:
     i=0
     for j in (0,5):
