@@ -5,7 +5,16 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
-
-distance=4
-for n in range(0,distance):
-  move()
+while True:
+  if look()=='fruit':
+    move()
+  elif right_side()=='fruit':
+    turn(1)
+    while look()=='fruit':
+      move()
+  elif right_side()=='fruit':
+    turn(1)
+    while look()=='fruit':
+      move()
+  else:
+    turn(1)
