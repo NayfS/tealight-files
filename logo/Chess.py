@@ -7,7 +7,7 @@ def square(edges, size):
         turn(angle)
       move(size)
   turn(angle)
-  for i in range(0,5):
+  for i in range(0,2):
       for i in range(0, edges):
         move(size)
         turn(angle)
