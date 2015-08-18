@@ -6,7 +6,7 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-for:
+
   while look()=='friut':
     move()
     
