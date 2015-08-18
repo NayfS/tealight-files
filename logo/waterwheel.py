@@ -1,7 +1,7 @@
 from tealight.logo import move, turn
 
 
-def striangle(side):
+def triangle(side):
   for i in range(0,3):
     move(side)
     turn(60)
