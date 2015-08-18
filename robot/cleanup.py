@@ -8,4 +8,4 @@ from tealight.robot import (move,
 
 distance=4
 for n in range(0,distance):
-  move(0)
+  move()
