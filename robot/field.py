@@ -13,7 +13,7 @@ while True:
     turn(1)
     while look()=='fruit':
       move()
-  elif right_side()=='fruit':
+  elif left_side()=='fruit':
     turn(1)
     while look()=='fruit':
       move()
