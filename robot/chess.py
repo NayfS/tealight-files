@@ -13,10 +13,10 @@ while look()=='friut':
 if right_side()=='fruit':
     turn(1)
     while look()=='friut':
-    move()
+      move()
   
 if left_side()=='fruit':
     turn(2)
     while look()=='friut':
-    move()
+      move()
 
