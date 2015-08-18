@@ -19,7 +19,7 @@ while True:
     while look()=='fruit':
       move()
   else:
-    while i=0:
+    while i==0:
       turn(1)
       if look()=='fruit':
         i=1
