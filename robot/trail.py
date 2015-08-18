@@ -10,7 +10,7 @@ while True:
    if right_side()=='fruit':
     turn(1)
    elif left_side()=='fruit':
-    turn(2)
+    turn(3)
    move()
     
   
