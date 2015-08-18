@@ -18,4 +18,4 @@ while True:
     while look()=='fruit':
       move()
   else:
-    turn(2)
+    turn(1)
