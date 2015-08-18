@@ -13,7 +13,7 @@ def board(edges, size):
   decoration = size / 1
   for i in range(0, edges):
     move(size)
-    square(decoration)
+    polygon(decoration)
     turn(angle)
 
 turn(-90)
