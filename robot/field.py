@@ -21,6 +21,7 @@ while True:
   else:
     while i==0:
       turn(1)
+      move(1)
       if look()=='fruit':
         i=1
     
