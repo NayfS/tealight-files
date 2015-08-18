@@ -12,7 +12,6 @@ if right_side()=='fruit':
     turn(1)
     while look()=='friut':
       move()
-  
   elif left_side()=='fruit':
       turn(2)
       while look()=='friut':
