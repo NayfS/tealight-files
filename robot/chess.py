@@ -6,6 +6,6 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-if right_side=='fruit':
+if right_side()=='fruit':
   turn(1)
   move(0)
