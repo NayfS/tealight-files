@@ -12,12 +12,24 @@ while True:
     turn(1)
     while look()=='fruit':
       move()
+        elif left_side()=='fruit':
+    turn(2)
+    while look()=='fruit':
+      move()
   elif left_side()=='fruit':
+    turn(2)
+    while look()=='fruit':
+      move()
+        elif left_side()=='fruit':
     turn(2)
     while look()=='fruit':
       move()
   elif look()=='fruit':
     move()
+      elif left_side()=='fruit':
+    turn(2)
+    while look()=='fruit':
+      move()
 
 
   else:
