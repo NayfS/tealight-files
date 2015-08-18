@@ -7,7 +7,7 @@ from tealight.robot import (move,
                             right_side)
 
 while True:
-  if right_side()=='none':
+  if right_side()=='fruit':
     move()
     
   
