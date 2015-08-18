@@ -13,8 +13,8 @@ if right_side()=='fruit':
     while look()=='friut':
       move()
   
-elif left_side()=='fruit':
-    turn(2)
-    while look()=='friut':
-      move()
+  elif left_side()=='fruit':
+      turn(2)
+      while look()=='friut':
+        move()
 
