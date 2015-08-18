@@ -8,4 +8,4 @@ from tealight.robot import (move,
 
 if right_side()=='fruit':
   turn(1)
-  move(0)
+  move()
