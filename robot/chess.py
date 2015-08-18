@@ -7,9 +7,7 @@ from tealight.robot import (move,
                             right_side)
 
 
-while look()=='friut':
-    move()
-    
+
 if right_side()=='fruit':
     turn(1)
     while look()=='friut':
