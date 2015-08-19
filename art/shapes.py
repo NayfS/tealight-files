@@ -4,5 +4,5 @@ color("blue")
 
 spot(300,200,20)
 circle(300,200,50)
-color('red')
+color()
 box(250,150,100,100)
