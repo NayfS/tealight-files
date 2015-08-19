@@ -38,8 +38,8 @@ def handle_frame():
   color("white")
   
   spot(x,y,8)
-  vy =(vx + ax)
-  vx =(vy + ay)
+  vx =(vx + ax)
+  vy =(vy + ay)
   
   x = (x + vx)
   y = (y + vy)
