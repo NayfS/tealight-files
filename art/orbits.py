@@ -24,7 +24,7 @@ def handle_keydown(key):
   elif key == "down":
     ay = power
   else:
-    ay=-power
+    ay= -power
 
 def handle_keyup(key):
   global ax, ay
@@ -35,6 +35,7 @@ def handle_keyup(key):
     ay = 0
   else:
     ay=-power
+  
 def handle_frame():
   global x,y,vx,vy,ax,ay
   
