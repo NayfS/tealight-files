@@ -38,11 +38,11 @@ def handle_frame():
   color("white")
   
   spot(x,y,8)
-  vx = vx + ax
-  vy = vy + ay
+  vx = screen_height-(vx + ax)
+  vy = screen_width-(vy + ay)
   
-  x = screen_width-(x + vx)
-  y = screen_height-(y + vy)
+  x = (x + vx)
+  y = (y + vy)
   
   color("blue")
   
