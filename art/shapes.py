@@ -1,8 +1,5 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 
-
-
-
 color('green')
 box(250,150,100,100)
 color("blue")
