@@ -41,8 +41,8 @@ def handle_frame():
   vx = vx + ax
   vy = vy + ay
   
-  x = x + vx
-  y = y + vy
+  x = screen_width-(x + vx)
+  y = screen_height-(y + vy)
   
   color("blue")
   
