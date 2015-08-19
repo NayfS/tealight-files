@@ -33,7 +33,8 @@ def handle_keyup(key):
     ax = 0
   elif key == "up" or key == "down":
     ay = 0
-    
+  else:
+    ay=-power
 def handle_frame():
   global x,y,vx,vy,ax,ay
   
