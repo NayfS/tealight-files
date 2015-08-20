@@ -12,5 +12,6 @@ for i in range (0,15):
   y=random.randrange(1,100,1)
   list.append((x,y))
 
-y=color('blue')
+color('blue')
+y
 print list
