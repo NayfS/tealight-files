@@ -26,6 +26,18 @@ def setbox(A, x, y, val):
   position = (10*(y))+x
   A[position] = val
  
+#Determines numbers
+def getSurroundingMines(x, y):
+  surround = 0
+  global mine
+  for i in range(-1,2):
+    for j in range(-1, 2):
+      surround=surround+get(mine, x+i, y+j)
+  color('black')
+  if surround>0:
+    text(x*60 + 17, y*60 + 20 , surround)
+  return surround
+
 #this finds which box is clicked
 def handle_mousedown(x, y):
   boxX = floor(x/60)
