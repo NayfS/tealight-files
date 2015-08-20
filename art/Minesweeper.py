@@ -48,7 +48,7 @@ def handle_mousedown(x, y):
   if get(mine, boxX, boxY)==1:
     color('red')
     box(boxX*60,boxY*60,50,50)
-    sys.exit(0)
+    raise SystemExit(0)
   if get(mine, boxX, boxY)==0:
     color('white')
     box(boxX*60,boxY*60,50,50)
