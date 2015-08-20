@@ -6,5 +6,7 @@ for j in range(0,10):
   for i in range(0,10):
     x=box(i*50,j*50,40,40)
     
-x=random.randrange(100,1)
+
+x=random.randrange(1,100,1)
+list=[]
 print(x)
