@@ -42,7 +42,6 @@ def getSurroundingMines(x, y):
 #this finds which box is clicked
 def handle_mousedown(x, y):
   global score
-  score+=1
   boxX = floor(x/60)
   boxY = floor(y/60)
   print boxY, boxX
@@ -50,15 +49,14 @@ def handle_mousedown(x, y):
   if get(mine, boxX, boxY)==1:
     color('red')
     box(boxX*60,boxY*60,50,50)
-    score-=1
   if get(mine, boxX, boxY)==0:
     color('white')
     box(boxX*60,boxY*60,50,50)
     print getSurroundingMines(boxX,boxY)
-    
+    score+=1
 
 color('black')
-text(0, 600,'Score: '+str(score))
+text(0, 600,score)
  
 #this is where the program starts
 makegrid()
