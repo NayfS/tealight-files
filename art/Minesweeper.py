@@ -18,12 +18,12 @@ def makegrid():
  
 #this gets the information about a box from the corresponding list
 def get(A, x, y):
-  position = (10*(y))+x
+  position = (11*(y))+x
   return A[position]
  
 #this sets the information about a box to the corresponding lis
 def setbox(A, x, y, val):
-  position = (10*(y))+x
+  position = (11*(y))+x
   A[position] = val
  
 #Determines numbers
@@ -58,14 +58,14 @@ def handle_mousedown(x, y):
 makegrid()
  
 mine = []
-for i in range(0, 100):
+for i in range(0, 121):
   mine.append(0)
  
 for i in range(0,15):
   b=0
   while b==0:
-    x=randrange(1,9,1)
-    y=randrange(1,9,1)
+    x=randrange(0,9,1)
+    y=randrange(0,9,1)
     if get(mine, x, y) == 0:
       setbox(mine,x,y,1)
       b=1
