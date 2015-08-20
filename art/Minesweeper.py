@@ -3,6 +3,7 @@ import sys
 from random import randrange
 from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
+Ingame=1
 score=0
 color('white')
 box(0,0,1000,1000)
@@ -44,36 +45,38 @@ def getSurroundingMines(x, y):
 
 #this finds which box is clicked
 def handle_mousedown(x, y,button):
-  
+  global Ingame
   global score
   boxX = floor(x/60)
   boxY = floor(y/60)
-  if boxX<10:
-    if boxY<10:
-      if button=="left":
-        print boxY, boxX
-        print get(mine, boxX, boxY)
-        if get(mine, boxX, boxY)==1:
-          color('red')
-          box(boxX*60,boxY*60,50,50)
-          color("white")
-          box(0,600,500,50)
-          color("black")
-          text(0, 600,"Final Score: "+str(score))
-          text(500,600, "You Lost!")
-        if get(mine, boxX, boxY)==0:
-          color('white')
-          box(boxX*60,boxY*60,50,50)
-          setbox(mine,boxX,boxY,2)
-          print getSurroundingMines(boxX,boxY)
-          score+=1
-          color("white")
-          box(0,600,500,50)
-          color("black")
-          text(0, 600,"Score: "+str(score))
-      if button=="right"and get(mine, boxX, boxY)!=2:
-        color("green")
-        spot(boxX*60 +25 ,boxY*60 + 25,10)
+  if Ingame==1:
+    if boxX<10:
+      if boxY<10:
+        if button=="left":
+          print boxY, boxX
+          print get(mine, boxX, boxY)
+          if get(mine, boxX, boxY)==1:
+            color('red')
+            box(boxX*60,boxY*60,50,50)
+            color("white")
+            box(0,600,500,50)
+            color("black")
+            text(0, 600,"Final Score: "+str(score))
+            text(500,600, "You Lost!")
+            Ingame=0
+          if get(mine, boxX, boxY)==0:
+            color('white')
+            box(boxX*60,boxY*60,50,50)
+            setbox(mine,boxX,boxY,2)
+            print getSurroundingMines(boxX,boxY)
+            score+=1
+            color("white")
+            box(0,600,500,50)
+            color("black")
+            text(0, 600,"Score: "+str(score))
+        if button=="right"and get(mine, boxX, boxY)!=2:
+          color("green")
+          spot(boxX*60 +25 ,boxY*60 + 25,10)
 
 
 color('black')
