@@ -2,5 +2,5 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 
 for j in range(0,10):
   for i in range(0,10):
-    box(i*60,j*60,40,40)
+    box(i*50,j*50,40,40)
     
