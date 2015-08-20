@@ -35,7 +35,8 @@ def getSurroundingMines(x, y):
   global mine
   for i in range(-1,2):
     for j in range(-1, 2):
-      surround=surround+get(mine, x+i, y+j)
+      if get(mine, x+i, y+j) ==1:
+        surround=surround+1
   color('black')
   if surround>0:
     text(x*60 + 17, y*60 + 20 , surround)
