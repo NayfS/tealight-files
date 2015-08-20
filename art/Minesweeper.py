@@ -57,7 +57,7 @@ def handle_mousedown(x, y):
     score+=1
 
 color('black')
-text(0, 700,'Score: ')
+text(0, 700,'Score: '+str(score))
  
 #this is where the program starts
 makegrid()
