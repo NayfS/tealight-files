@@ -2,7 +2,7 @@ import random
 from random import randrange
 from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
- 
+
  
 #this makes the grid
 def makegrid():
@@ -44,6 +44,7 @@ for i in range(0, 100):
   mine.append(0)
  
 for i in range(0,15):
+  b=0
   while b==0:
     x=randrange(0,9,1)
     y=randrange(0,9,1)
