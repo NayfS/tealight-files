@@ -128,7 +128,7 @@ mine = []
 for i in range(0, 121):
   mine.append(0)
  
-for i in range(0,8):
+for i in range(0,1):
   b=0
   while b==0:
     x=randrange(0,9,1)
