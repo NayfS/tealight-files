@@ -1,7 +1,7 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 import random
 from random import randint
-import github.fourthdwarflord.art.Minesweeper.py
+import github.4thdwarflord.art.Minesweeper.py
 
 coord=[]
 
