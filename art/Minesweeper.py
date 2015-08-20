@@ -56,7 +56,7 @@ def handle_mousedown(x, y):
     print getSurroundingMines(boxX,boxY)
     score+=1
    
-text(0, 900,'Score: '+str(score))
+text(0, 700,'Score: '+str(score))
  
 #this is where the program starts
 makegrid()
