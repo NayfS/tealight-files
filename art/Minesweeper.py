@@ -1,12 +1,11 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 import random
 from random import randint
-
+ list=[]
 for j in range(0,10):
   for i in range(0,10):
     x=box(i*50,j*50,40,40)
     
-
-x=random.randrange(1,100,1)
-list=[]
-print(x)
+for i in range (0,15):
+  x=random.randrange(1,100,1)
+  list.append(x)
