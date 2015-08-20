@@ -2,6 +2,8 @@ import random
 from random import randrange
 from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
+color('white')
+box(0,0,1000,1000)
 
  
 #this makes the grid
