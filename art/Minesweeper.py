@@ -29,7 +29,10 @@ def handle_mousedown(x, y):
   boxX = floor(x/60)
   boxY = floor(y/60)
   print boxY, boxX
-  print get(mine, boxX, boxY)
+  if get(mine, boxX, boxY)==1:
+    color('red')
+    box(boxX*60,boxY*60,50,50)
+   
  
  
 #this is where the program starts
@@ -43,3 +46,5 @@ for i in range(0,15):
   x=randrange(0,9,1)
   y=randrange(0,9,1)
   setbox(mine,x,y,1)
+
+get(mine
