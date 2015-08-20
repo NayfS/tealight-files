@@ -1,4 +1,5 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
+import random
 
 for j in range(0,10):
   for i in range(0,10):
