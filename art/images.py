@@ -69,6 +69,7 @@ def uncover(boxX, boxY):
     box(0,600,500,50)
     color("black")
     text(0, 600,"Final score: "+str(score))
+    text(500,600, "You Lost!")
   if get(mine, boxX, boxY)==0:
     color('white')
     box(boxX*60,boxY*60,50,50)
