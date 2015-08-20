@@ -4,6 +4,8 @@ from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 score=0
 ingame=1
+color('white')
+box(0,0,1000,1000)
 color("black")
 text(0, 600,"Score: "+str(score))
  
