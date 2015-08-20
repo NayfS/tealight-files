@@ -10,3 +10,5 @@ for j in range(0,10):
 for i in range (0,15):
   x=random.randrange(1,100,1)
   list.append(x)
+
+ print list
