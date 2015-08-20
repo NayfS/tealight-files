@@ -44,6 +44,10 @@ for i in range(0, 100):
   mine.append(0)
  
 for i in range(0,15):
-  x=randrange(0,9,1)
-  y=randrange(0,9,1)
-  setbox(mine,x,y,1)
+  while b=0:
+    x=randrange(0,9,1)
+    y=randrange(0,9,1)
+    if get(mine, x, y) == 0:
+      setbox(mine,x,y,1)
+      b=1
+    
