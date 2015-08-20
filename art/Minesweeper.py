@@ -1,7 +1,10 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 import random
 from random import randint
-import github.'4thdwarflord'.art.Minesweeper.py
+
+def setbox(A, x, y, val):
+  A[((y-1)*10)+x] = val
+
 
 coord=[]
 
