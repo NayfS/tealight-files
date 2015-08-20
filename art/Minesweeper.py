@@ -41,7 +41,7 @@ def getSurroundingMines(x, y):
 
 #this finds which box is clicked
 def handle_mousedown(x, y):
-  global score=+1
+  global score
   boxX = floor(x/60)
   boxY = floor(y/60)
   print boxY, boxX
@@ -54,6 +54,7 @@ def handle_mousedown(x, y):
     color('white')
     box(boxX*60,boxY*60,50,50)
     print getSurroundingMines(boxX,boxY)
+    score+=1
    
 text(0, 500,'Score: '+score)
  
