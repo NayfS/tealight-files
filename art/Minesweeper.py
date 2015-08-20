@@ -55,7 +55,8 @@ def handle_mousedown(x, y):
     box(boxX*60,boxY*60,50,50)
     print getSurroundingMines(boxX,boxY)
     score+=1
-   
+
+color('black')
 text(0, 700,'Score: ')
  
 #this is where the program starts
