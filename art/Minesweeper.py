@@ -64,6 +64,10 @@ def handle_mousedown(x, y,button):
           box(0,600,500,50)
           color("black")
           text(0, 600,"Score: "+str(score))
+  if button=="right"and get(mine, boxX, boxY)!=2:
+    color("green")
+    box(boxX*60,boxY*60,50,50)
+
 
 color('black')
 
