@@ -1,1 +1,1 @@
-import tkinter
+help('modules')
