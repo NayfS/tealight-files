@@ -82,9 +82,12 @@ def uncover(boxX, boxY):
     box(0,600,500,50)
     color("black")
     text(0, 600,"Score: "+str(score))
-  if score==100:
-    Ingame=0
-    text(500,600, "You Won!")
+    if score==93:
+      ingame=0
+      box(0,600,500,50)
+      color("black")
+      text(0, 600,"Final score: "+str(score))
+      text(500,600, "You WIN!")
     if end == 0:
       if boxX<9:
         if boxY<9:
@@ -118,6 +121,23 @@ def uncover(boxX, boxY):
             uncover(boxX, boxY +1)
             uncover(boxX, boxY -1)
             uncover(boxX +1, boxY)
+      if boxX == 0:
+        if boxY == 9:
+          uncover(boxX, boxY -1)
+          uncover(boxX +1, boxY)
+      if boxX == 9:
+        if boxY == 0:
+          uncover(boxX, boxY +1)
+          uncover(boxX -1, boxY)
+      if boxX == 0:
+        if boxY == 0:
+          uncover(boxX, boxY +1)
+          uncover(boxX +1, boxY)
+      if boxX == 9:
+        if boxY == 9:
+          uncover(boxX, boxY -1)
+          uncover(boxX -1, boxY)
+ 
  
 color('black')
  
@@ -128,7 +148,7 @@ mine = []
 for i in range(0, 121):
   mine.append(0)
  
-for i in range(0,1):
+for i in range(0,15):
   b=0
   while b==0:
     x=randrange(0,9,1)
