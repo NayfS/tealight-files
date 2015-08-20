@@ -5,7 +5,7 @@ from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 color('white')
 box(0,0,1000,1000)
-global score
+score=0
  
 #this makes the grid
 def makegrid():
@@ -41,6 +41,7 @@ def getSurroundingMines(x, y):
 
 #this finds which box is clicked
 def handle_mousedown(x, y):
+  global score+=1
   boxX = floor(x/60)
   boxY = floor(y/60)
   print boxY, boxX
@@ -54,7 +55,7 @@ def handle_mousedown(x, y):
     box(boxX*60,boxY*60,50,50)
     print getSurroundingMines(boxX,boxY)
    
- 
+text(0, 500,'Score: '+score)
  
 #this is where the program starts
 makegrid()
