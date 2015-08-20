@@ -46,5 +46,3 @@ for i in range(0,15):
   x=randrange(0,9,1)
   y=randrange(0,9,1)
   setbox(mine,x,y,1)
-
-get(mine
