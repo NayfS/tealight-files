@@ -1,4 +1,5 @@
 import random
+from random import randrange
 from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
  
@@ -23,7 +24,7 @@ def setbox(A, x, y, val):
   position = (10*(y))+x
   A[position] = val
  
-#this ffinds which box is clicked
+#this finds which box is clicked
 def handle_mousedown(x, y):
   boxX = floor(x/60)
   boxY = floor(y/60)
@@ -37,3 +38,8 @@ makegrid()
 mine = []
 for i in range(0, 100):
   mine.append(0)
+ 
+for i in range(0,15):
+  x=randrange(0,9,1)
+  y=randrange(0,9,1)
+  setbox(mine,x,y,1)
