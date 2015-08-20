@@ -82,6 +82,9 @@ def uncover(boxX, boxY):
     box(0,600,500,50)
     color("black")
     text(0, 600,"Score: "+str(score))
+    if score==85:
+      Ingame=0
+      text(500,600, "You Won!")
     if end == 0:
       if boxX<9:
         if boxY<9:
