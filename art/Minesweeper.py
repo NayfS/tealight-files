@@ -5,7 +5,7 @@ list=[]
 
 for j in range(0,10):
   for i in range(0,10):
-    color=('grey')
+    color=('blue')
     x=box(i*50,j*50,40,40)
     
 for i in range (0,15):
