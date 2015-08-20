@@ -1,5 +1,4 @@
 import random
-import sys
 from random import randrange
 from math import floor
 from tealight.art import (color, line, spot, circle, box, image, text, background)
@@ -51,12 +50,13 @@ def handle_mousedown(x, y,button):
     if boxY<10:
       if ingame == 1:
         if button=="left":
-          uncover(boxX, boxY, score)
+          uncover(boxX, boxY)
         if button=="right"and get(mine, boxX, boxY)!=2:
           color("green")
           spot(boxX*60 +25 ,boxY*60 + 25,10)
  
-def uncover(boxX, boxY, score):
+def uncover(boxX, boxY):
+  global score
   global ingame
   global mine
   print boxY, boxX
@@ -84,10 +84,36 @@ def uncover(boxX, boxY, score):
         if boxY<9:
           if boxX>0:
             if boxY>0:
-              uncover(boxX +1, boxY, score)
-              uncover(boxX -1, boxY, score)
-              uncover(boxX, boxY +1, score)
-              uncover(boxX, boxY -1, score)
+              uncover(boxX +1, boxY)
+              uncover(boxX -1, boxY)
+              uncover(boxX, boxY +1)
+              uncover(boxX, boxY -1)
+      if boxX<9:
+        if boxY==9:
+          if boxX>0:
+            uncover(boxX +1, boxY)
+            uncover(boxX -1, boxY)
+            uncover(boxX, boxY -1)
+      if boxX<9:
+        if boxY==0:
+          if boxX>0:
+            uncover(boxX +1, boxY)
+            uncover(boxX -1, boxY)
+            uncover(boxX, boxY +1)
+      if boxY<9:
+        if boxX==9:
+          if boxY>0:
+            uncover(boxX +1, boxY)
+            uncover(boxX -1, boxY)
+            uncover(boxX, boxY -1)
+      if boxY<9:
+        if boxX==0:
+          if boxY>0:
+            uncover(boxX, boxY +1)
+            uncover(boxX, boxY -1)
+            uncover(boxX +1, boxY)
+ 
+     
  
    
        
